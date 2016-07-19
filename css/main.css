@@ -1,5 +1,5 @@
 body, .row {
-    background-color: #ccc;
+    background-color: #ddd;
     
 }
 
@@ -7,3 +7,6 @@ h4 {
     font-size: 30px;
 }
 
+.panel-heading {
+    background-color: #111;
+}

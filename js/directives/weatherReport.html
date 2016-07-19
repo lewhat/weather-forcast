@@ -3,15 +3,36 @@
                     <h3 class="panel-title">{{ convertToDate({ dt: weatherDay.dt }) | date: dateFormat }}</h3>
                 </div>
 
-                <div class="panel-body">
-                   Daytime Avg temprature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.day}) }}    
-                </div>
+    
+                <div class="col-md-6">
+                        <div class="panel-body">
+                           Daytime temprature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.day}) }} &#8457;   
+                        </div>
 
-                <div class="panel-body">
-                   Daytime min temprature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.min}) }}        
-                </div>
+                        <div class="panel-body">
+                           Daytime min temprature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.min}) }} &#8457;       
+                        </div>
 
-                <div class="panel-body">
-                   Daytime max temprature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.min}) }}            
+                        <div class="panel-body">
+                           Daytime max temprature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.min}) }} &#8457;      
+                        </div>
                 </div>
+    
+    
+                <div class="col-md-6">
+                        <div class="panel-body">
+                           Night time temprature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.night}) }} &#8457;
+                        </div>
+
+                        <div class="panel-body">
+                           Evening time temprature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.eve}) }} &#8457;      
+                        </div>
+
+                        <div class="panel-body">
+                           Morning time temprature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.morn}) }} &#8457;          
+                        </div>
+                </div>
+    
+                    
+    
 </div>
